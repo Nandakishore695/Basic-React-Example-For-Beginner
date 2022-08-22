@@ -19,9 +19,9 @@ function LoginPage() {
         <h3 style={{ color: "skyblue" }}>FaceBook</h3>
         <p>Log in to facebook</p>
         <form className="form" autoComplete="off" onSubmit={loginHandler}>
-          <input type="text"id="name" name="name" value={name} onChange={e=>setName(e.target.value)} placeholder="Email address or phone number" />
+          <input type="text" name="name" value={name} onChange={e=>setName(e.target.value)} placeholder="Email address or phone number" />
           <br />
-          <input type="password" id="password" name="passw" value={passw} onChange={e=>setPassw(e.target.value)}placeholder="Password" />
+          <input type="password" name="passw" value={passw} onChange={e=>setPassw(e.target.value)} placeholder="Password" />
           <br />
           <button type="submit" style={{ background: "skyblue" }} >
             Login
