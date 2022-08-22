@@ -28,6 +28,11 @@ function LoginPage() {
             Login
           </button>
         </form>
+        <div className="link">
+          <p>
+            <a href="#">Forgot Password</a> <a href="#">Sign Up</a>
+          </p>
+        </div>
       </center>
     </>
   );
