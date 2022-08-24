@@ -1,27 +1,35 @@
-import React, { useState } from "react";
+import React from "react";
 
-function TextSearch() {
-    const array = ["BlockChain", "Javascript", "Python", "MongoDB"];
-    const [list, setList] = useState(array);
+class TextSearch extends React.Component {
+    constructor() {
+        super();
+        this.state = { array: ["BlockChain", "Javascript", "Python", "MongoDB"] };
+    }
 
-    const findHandler = (e) => {
+    findHandler = (e) => {
         if (e.target.value === "") {
-            setList(array);
+            this.setState(this.state.array);
             return;
         }
-        const filterValue = list.filter(
-            (text) => text.toLowerCase().indexOf(e.target.value.toLowerCase()) !== -1)
-        setList(filterValue);
+      
+         let filterValue = this.state.array.filter((list) => 
+        list.toLowerCase().indexOf(e.target.value.toLowerCase()) !== -1);
+        console.log(filterValue);
+        this.setState({filterValue});
     }
-    
-    return (
-        <>
-            Search:
-            <input type="text" name="search" onChange={findHandler} />
-            {
-                list.map((item, index) => (<div key={index}>{item}</div>))//Displaying Data
-            }
-        </>
-    )
+
+    render() {
+        return (
+            <>
+                <center>
+                    <label><b>Search:</b></label>
+                    <input type="text" name="search" onChange={this.findHandler} />
+                    {
+                        this.state.array.map((item, index) => (<div key={index}>{item}</div>))
+                    }
+                </center>
+            </>
+        )
+    }
 }
 export default TextSearch;
