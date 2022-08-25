@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 
-function RegForm() {
-    const [formData, setFormData] = useState({
-        userName: "",
 
+function RegForm() {
+    const [inputField, setInputField] = useState({
+        userName: "",
+        Firstname:""
     })
-    // const [setvalue, setSetValue] = useState();
+    const inputsHandler =(e)=>{
+        setInputField({...inputField,[e.target.name]:[e.target.value]})
+    }
 
     const SubmitSingUp = (e) => {
         e.preventDefault();
-             
+             console.log(inputField);
     }
-
+  //value={inputField.userName}
     return (
         <>
             <center>
@@ -19,10 +22,10 @@ function RegForm() {
                 <hr />
                 <form onSubmit={SubmitSingUp} autoComplete="off">
                     <label><b>Firstname: </b></label>
-                    <input placeholder="Firstname" value={formData.userName} onChange={(e) => setFormData(e.target.value)} />
+                    <input placeholder="Firstname" name="userName" onChange={(e)=>inputsHandler(e)} />
                     <br />
                     <label><b>Surname: </b></label>
-                    <input placeholder="Firstname" />
+                    <input placeholder="Firstname" name="Firstname"  onChange={(e)=>inputsHandler(e)}/>
                     <br />
                     <label><b>Mobile number or email address: </b></label>
                     <input placeholder="Firstname" />
