@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 function RegForm() {
     const [formData, setFormData] = useState({
         userName: "",
