@@ -12,7 +12,15 @@ class LoginPage extends React.Component {
    //onSubmit Handler Method
   loginHandler = (e) => {
     e.preventDefault(); //for don't refresh form we use preventDefault
-    console.log(this.state);
+    
+    //Validation
+    if (this.state.userName && this.state.userPassword) {
+      console.log(this.state);
+      this.setState({ userName: '', userPassword: '' })
+    }
+    else {
+      alert("Please enter your details")
+    }
   };
 
   render() {
@@ -58,43 +66,3 @@ class LoginPage extends React.Component {
   }
 }
 export default LoginPage;
-
-// class TestLoginForm extends React.Component {
-//   constructor() {
-//     super();
-//     this.state = {
-//       userName: "",
-//       userPassword: "",
-//     };
-
-//   }
-//   handleSubmitevents = (e) => {
-//     e.preventDefault();
-//     console.log(this.state)
-//   };
-//   render() {
-//     return (
-//       <>
-//         <form className=" TestLoginForm " onSubmit={this.handleSubmitevents}>
-
-//           <label>User Name</label>
-//           <input
-//             type="text"
-//             name="username"
-//             value={this.state.userName}
-//             onChange={(event)=> this.setState({userName:event.target.value})}
-//           />
-//           <label>Password</label>
-//           <input
-//             type="password"
-//             name="userPassword"
-//             value={this.state.userPassword}
-//             onChange={(event)=> this.setState({userPassword:event.target.value})}
-//           />
-//           <button type="submit">submit</button>
-//         </form>
-//       </>
-//     );
-//   }
-// }
-// export default TestLoginForm;
