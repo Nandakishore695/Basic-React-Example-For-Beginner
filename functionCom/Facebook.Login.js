@@ -8,12 +8,21 @@ function LoginPage() {
 
  //onSubmit Handler Method
   const loginHandler = (e) => {
-    e.preventDefault(); //for don't refresh form we use preventDefault
-    const info={name:name,passw:passw}; 
-    console.log(info)
-		setDataInput([info]);
-
+    e.preventDefault(); 
+    
+    //Validation
+    if(name && passw){
+      const EnteryValue = { name, passw };
+      setAllEntry([EnteryValue]);
+      console.log(EnteryValue);
+      setName("");  
+      setPassw("");
+    }
+    else{
+      alert("Please enter your details");
+    }
   };
+	
   return (
     <>
       <center>
