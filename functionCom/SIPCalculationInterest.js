@@ -2,33 +2,30 @@ import React, { useState } from 'react'
 import { Button, Form, Input } from 'antd';
 
 export default function FormCal() {
-    const [dataInfo, setDataInfo] = useState({ total: "", intresetRate: "", dmy: "" });
-    const [data, seData] = useState([]);
-    const [error, setError] = useState(false);
+    const [dataInfo, setDataInfo] = useState({ total: "", intresetRate: "", dmy: "" }); //INITIAL VALES.....
+    const [data, seData] = useState([]); //DATA MAP ON NODE WEB SITE.....
+    const [error, setError] = useState(false);//VALIDATION STATE.....
 
+    //ONCHANGE METHOD.....
     function handlerInput(e) {
         setDataInfo({ ...dataInfo, [e.target.name]: e.target.value })
     }
+    
+    //BUTTON METHOD.....
     function handlerSave(e) {
-        e.preventDefault();
+        e.preventDefault();//FOR DON'T REFRESH PAGE METHOD.....
         if (!dataInfo.total || !dataInfo.intresetRate || !dataInfo.dmy) {
             setError(true);
             return false;
         }
-        // if (=== "") {
-        //     setError("pls enter persentage");
-        // }
-        // if ( === "") {
-        //     setError("pls enter days no");
-        // }
         else {
+            console.log(dataInfo);
             seData([dataInfo]);
         }
-
-
     }
     return (
         <>
+        //ANT DESIGN LIBIARY.....
             <b>Simple Interest</b>
             <Form className='form-wrapper'
                 onFinish={handlerSave} >
@@ -59,6 +56,7 @@ export default function FormCal() {
                 <br />
                 <Button htmlType='submit' type='primary' onClick={handlerSave}>Calculation</Button>
             </Form>
+            //ARRAY LIST MAPING ON NODE.....
             {
                 data.map((item, index) => (
                     <div key={index}><>Total Amount:-{item.total}</>
