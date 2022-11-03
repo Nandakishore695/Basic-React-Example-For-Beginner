@@ -1,0 +1,30 @@
+import "./styles.css";
+import { Input } from "antd";
+const { Search } = Input;
+
+export default function App() {
+  const cars = ["Saab", "Volvo", "BMW"];
+  const handleSearch=()=
+
+  return (
+    <>
+      <Search />
+      <Select
+   
+        placeholder="Select Coin"
+
+        // onClick={(e) => hanleClick(e)}
+        onKeyUp={(e) => handleSearch(e)}
+      >
+        {" "}
+        {exchangeCoinsListData?.map((item) => {
+          return (
+            <Option key={item} value={item.coin}>
+              {item.coin}
+            </Option>
+          );
+        })}{" "}
+      </Select>
+    </>
+  );
+}
