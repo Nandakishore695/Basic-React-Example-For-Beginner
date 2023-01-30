@@ -7,7 +7,7 @@ function CurdTableComponent() {
             <di className="text-curd">
                 <div><b>CurdTable</b></div>
                 <di className="text-curd">
-                    <table border="1px" cellspacing="0" cellpadding="5">
+                    <table border="1px" cellSpacing="0" cellPadding="5">
                         <tr>
                             <th></th>
                             <th>Name</th>
@@ -20,7 +20,7 @@ function CurdTableComponent() {
                         </tr>
                         {stockData.map((item, idx) => (
                             <>
-                                <tr>
+                                <tr key={idx}>
                                     <td>
                                         <input type="checkbox" />
                                     </td>
