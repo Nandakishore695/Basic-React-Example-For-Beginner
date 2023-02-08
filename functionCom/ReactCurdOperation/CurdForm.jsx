@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-function CurdFormComponent() {
-    const cityNameList = ["Assam", "Bangalore", "Chennai", "Delhi", "Hyderabad"]
+import React, { useState, useRef } from "react";
+
+function CurdFormComponent(props) {
+    const cityNameList = ["Assam", "Bangalore", "Chennai", "Delhi", "Hyderabad"];
     const [isChecked, setChecked] = useState(null);
     const [fName, setFirstName] = useState("");
     const [lName, setLastName] = useState("");
@@ -8,29 +9,41 @@ function CurdFormComponent() {
     const [cityName, setCity] = useState("");
     const [addressName, setAddress] = useState("");
     const [genderName, setGender] = useState("");
+    const [erroMessage, setErroMessage] = useState(null);
+    const Ref = useRef("");
 
     const handleCheck = (event) => {
+        setErroMessage(null);
         let checkBoxSelection = event.currentTarget.checked;
         setChecked(checkBoxSelection);
     }
+
     const handleSubmit = () => {
-        let object = { firstName: fName, lastName: lName, email: emailName, city: cityName, gender: genderName, address: addressName }
-        console.log(object);
+        let object = {
+            firstName: fName, lastName: lName, email: emailName, city: cityName,
+            gender: genderName, address: addressName
+        }
+        if (!isChecked) {
+            setErroMessage("Please select checkbox")
+        }
+        else {
+            console.log(object);
+            Ref.current.reset();
+        }
     }
-    let ciytNames = cityNameList.map((item, idx) => {
-        <li key={idx}>
-            {item}
-        </li>
-    })
+
     return (
         <>
+            <div className="alert-error ">
+                {erroMessage}
+            </div>
             <di className="text-curd">
                 <di>
                     Register Form
                 </di>
                 <br />
                 <di>
-                    <form >
+                    <form ref={Ref}>
                         <label>FirstName :</label>
                         <input type="text" name="name" onChange={(e) => setFirstName(e.target.value)} />
                         <label>LastName :</label>
@@ -39,8 +52,15 @@ function CurdFormComponent() {
                         <label>Email :</label>
                         <input type="email" onChange={(e) => setEmail(e.target.value)} />
                         <label>City :</label>
-                        <select placeholder='Select City' onChange={(e) => setCity(e.target.value)}>
-                            <option>{ciytNames}</option>
+                        <select onChange={(e) => setCity(e.target.value)}>
+                            <option>select</option>
+                            {cityNameList.map((item, idx) => (
+                                <>
+                                    <option key={idx}>
+                                        {item}
+                                    </option>
+                                </>
+                            ))}
                         </select>
                         <br />
                         <label >Gender :</label>
