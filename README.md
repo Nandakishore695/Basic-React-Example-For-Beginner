@@ -1,5 +1,4 @@
-# React Interview Questions and Answer
-❄️ 
+# React Interview Questions and Answer❄️ 
 **1.What is React Js?**
 - React is an open-source front-end JavaScript library used for building single-page applications.
 
