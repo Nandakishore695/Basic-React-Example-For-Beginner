@@ -1,6 +1,7 @@
 # React Interview Questions and Answer❄️ 
 **1.What is React Js?**
 - React is an open-source front-end JavaScript library used for building single-page applications.
+- React was created by Jordan Walke, a software engineer working for Facebook. React was first deployed on Facebook's 
 
 **2.What is the JSX in React?**
 - JSX stands for JavaScript XML. It allows us to write directly HTML code in React (within JavaScript xml).
