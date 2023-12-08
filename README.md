@@ -21,8 +21,7 @@
 - NPM and Yarn are both package managers for JavaScript
 - Yarn was created by Facebook in 2016 as an improvement over NPM. It was designed to be faster, more secure, and more reliable than NPM. Yarn uses a lockfile to ensure that all packages are installed in the 
   same versions across different machines, and it also uses checksums to verify the integrity of packages. It also has an offline mode, which allows you to install packages without an internet connection.
-- In contrast, NPM is the original package manager for JavaScript, and it is still widely used. It does not have a lockfile, so the versions of packages installed on different machines may vary. It also does not 
-  have an offline mode, so you must have an internet connection to install packages.
-- Overall, Yarn is a more reliable and secure package manager than NPM, and it is the preferred choice for many developers.
+- In contrast, NPM is the original package manager for JavaScript, and it’s still widely used. It doesn’t have a lockfile and offline mode, so you must have an internet connection to install packages. So, the 
+  versions of packages installed on different machines may vary.
 
 
