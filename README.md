@@ -6,7 +6,7 @@
 **2.What is the JSX in React?**
 - JSX stands for JavaScript XML. It allows us to write directly HTML code in React (within JavaScript xml).
 
-**3.What are props?**
+**3.What is props?**
 - Props stand for "Properties" They provide a way to pass data from a parent component to its child components. Props are read-only, meaning that the child components receiving props cannot modify them directly.
 
 # Npm vs Yarn different between
