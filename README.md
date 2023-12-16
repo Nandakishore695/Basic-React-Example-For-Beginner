@@ -9,19 +9,6 @@
 **3.What is props?**
 - Props stand for "Properties" They provide a way to pass data from a parent component to its child components. Props are read-only, mean that the child components receiving props cannot modify them directly.
 
-**4.What is Callback function?**
-- A callback is a function that is passed as an argument to another function, and is called after the main function has finished its execution.
-```
-function show(sum) {
-  alert(‘i am show function'+sum);
-}
-function display(num1, num2, myshow) {
-  let sum = num1 + num2;
-  myshow(sum);
-}
-display(2, 3, show);
-
-```
 # Npm vs Yarn different between
 
 **1.What is NPM?**
