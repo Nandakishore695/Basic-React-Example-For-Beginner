@@ -13,15 +13,17 @@
 
 **1.What is NPM?**
 - NPM known for Node Package Manager. NPM is the popular JavaScript package manager It is installed automatically whenever we install Node.js on our system. 
+- It was created in 2009 by Isaac Schlueter. NPM uses a file called package.json to store the metadata of your project, such as name, version, dependencies, scripts, etc. It also creates a folder called node_modules where it stores the installed packages.
+- so, you must have an internet connection to install packages. So, the versions of packages installed on different machines may vary.
 
-**2.What is Yarn?**
+**What is Yarn?**
 - Yarn is package manager developed by Facebook in 2016. It is another package manager for the JavaScript developer. Yarn provides speed, consistency, stability, and security as an alternative to NPM.
+- It also uses the same package.json file as NPM, but it adds another file called yarn.lock
+- Yarn uses a lockfile to ensure that all packages are installed in the same versions across different machines, and it also uses checksums to verify the integrity of packages. It also has an offline mode, which allows you to install packages without an internet connection.
 
-**3.What is different between npm and yarn?**
-- NPM and Yarn are both package managers for JavaScript
-- Yarn was created by Facebook in 2016 as an improvement over NPM. It was designed to be faster, more secure, and more reliable than NPM. Yarn uses a lockfile to ensure that all packages are installed in the 
-  same versions across different machines, and it also uses checksums to verify the integrity of packages. It also has an offline mode, which allows you to install packages without an internet connection.
-- In contrast, NPM is the original package manager for JavaScript, and it’s still widely used. It doesn’t have a lockfile and offline mode, so you must have an internet connection to install packages. So, the 
-  versions of packages installed on different machines may vary.
+**What is Pnpm?**
+- PNPM stands for Performant Node Package Manager. It is another alternative package manager it was created in 2016 by Zoltan Kochan. It was designed to be faster, lighter, and more secure than both NPM and YARN.
+- It also uses the same package.json file as NPM and YARN, but it adds another file called pnpm-lock.yaml
+
 
 
