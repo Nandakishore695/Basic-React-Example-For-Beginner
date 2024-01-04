@@ -9,6 +9,9 @@
 **3.What is props?**
 - Props stand for "Properties" They provide a way to pass data from a parent component to its child components. Props are read-only, mean that the child components receiving props cannot modify them directly.
 
+**4.What is component?**
+-	A component is an independent, reusable bit of code which divides the UI into smaller pieces. 
+
 # Npm vs Yarn different between
 
 **1.What is NPM?**
