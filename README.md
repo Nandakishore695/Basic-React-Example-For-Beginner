@@ -10,7 +10,23 @@
 - Props stand for "Properties" They provide a way to pass data from a parent component to its child components. Props are read-only, mean that the child components receiving props cannot modify them directly.
 
 **4.What is component?**
--	A component is an independent, reusable bit of code which divides the UI into smaller pieces. 
+-	A component is an independent, reusable bit of code which divides the UI into smaller pieces.
+-	**There are two possible ways to create a component.**
+  
+  i.**Function Components:** is the simplest way to create a component. Those are pure JavaScript functions that accept props as a parameter.
+  ```
+  function Greeting() {
+    return <h1>Hello</h1>;
+}
+```
+  ii.**Class Components:** is introduce in ES6
+```
+  class Greeting extends React.Component {
+  render() {
+    return <h1>Hello</h1>;
+  }
+ }
+```
 
 # Npm vs Yarn different between
 
