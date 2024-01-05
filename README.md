@@ -15,7 +15,7 @@
   
   i.**Function Components:** is the simplest way to create a component. Those are pure JavaScript functions that accept props as a parameter.
   ```
-  function Greeting() {
+  function Greeting() { 
     return <h1>Hello</h1>;
 }
 ```
