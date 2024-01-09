@@ -38,6 +38,9 @@
 
 **What is arrow funcion expression in jsx?**
 - An arrow function expression is a compact alternative to a traditional function expression
+
+**What is fragment in jsx?**
+- In react a frament is a way to group multiple children's elements. Using a fragment prevents the addition of unnecessary nodes to the dom.
   
 # Npm vs Yarn different between
 
