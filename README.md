@@ -27,7 +27,18 @@
   }
  }
 ```
+**Different between Dom and Virtual Dom?**
 
+| DOM  | Virtual DOM |
+| ------------- | ------------- |
+| Dom is actual respresentation of the webpage  | Virtual Dom is lightweight copy of the dom |
+| Re-renders the entire page when updates occur  | Re-renders only the changes parts efficiently |
+| Can be slower, especially with frequent updates  | Optimized for faster rendering |
+| Suitable for static websites and simple applications | Ideal for dynamic and complex single-page applications with frequent updates |
+
+**What is arrow funcion expression in jsx?**
+- An arrow function expression is a compact alternative to a traditional function expression
+  
 # Npm vs Yarn different between
 
 **1.What is NPM?**
