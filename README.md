@@ -43,13 +43,13 @@
 - In react a frament is a way to group multiple children's elements. Using a fragment prevents the addition of unnecessary nodes to the dom.
 
 **8.Different between React and Angular?**
-- React and Angular are used to create single page ui application using components
+- React and Angular both are used to create single page ui application.
   
-| DOM  | Virtual DOM |
+| React  | Angular |
 | ------------- | ------------- |
-| React is a javascript library| Angular is a complete framework |
+| React is a library| Angular is a framework |
 | React users a virtual Dom which makes it faster| Angular users a real dom |
-| React is smaller in size and lightweight and therefore faster sometime| Angular is bigger because it is a complete framework |
+| React is smaller and lightweight and therefore faster sometime| Angular is bigger because it is a complete framework |
 | React depends on external libraries for many complex features, so developer has to write many lines of code for complex functionalities| Since Angular is a complete framework, therefore it provide built-in support for features like routing, forms, validation, and HTTP requests |
 | React is simple to learn and more popular than angular| Angular is slightly difficult to learn as it has Typescript, OOPS concept and many more thing |
 # Npm vs Yarn different between
