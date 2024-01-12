@@ -9,7 +9,10 @@
 **3.What is props?**
 - Props stand for "Properties" They provide a way to pass data from a parent component to its child components. Props are read-only, mean that the child components receiving props cannot modify them directly.
 
-**4.What is component?**
+**4.What is prop drilling in react?**
+- Prop drilling is the process of passing down prop through multiple layers of components.
+
+**5.What is component?**
 -	A component is an independent, reusable bit of code which divides the UI into smaller pieces.
 -	**There are two possible ways to create a component.**
   
@@ -27,14 +30,6 @@
   }
  }
 ```
-**5.Different between Dom and Virtual Dom?**
-
-| DOM  | Virtual DOM |
-| ------------- | ------------- |
-| Dom is actual respresentation of the webpage  | Virtual Dom is lightweight copy of the dom |
-| Re-renders the entire page when updates occur  | Re-renders only the changes parts efficiently |
-| Can be slower, especially with frequent updates  | Optimized for faster rendering |
-| Suitable for static websites and simple applications | Ideal for dynamic and complex single-page applications with frequent updates |
 
 **6.What is arrow funcion expression in jsx?**
 - An arrow function expression is a compact alternative to a traditional function expression
@@ -53,16 +48,25 @@
 | React depends on external libraries for many complex features, so developer has to write many lines of code for complex functionalities| Angular provide built-in features like routing, forms, validation, and HTTP requests |
 | React is simple to learn and more popular than angular| Angular is slightly difficult to learn it has Typescript, OOPS concept and many more thing |
 
-**9.What is state, stateless, stateful and state managament terms?**
+**9.Different between Dom and Virtual Dom?**
+
+| DOM  | Virtual DOM |
+| ------------- | ------------- |
+| Dom is actual respresentation of the webpage  | Virtual Dom is lightweight copy of the dom |
+| Re-renders the entire page when updates occur  | Re-renders only the changes parts efficiently |
+| Can be slower, especially with frequent updates  | Optimized for faster rendering |
+| Suitable for static websites and simple applications | Ideal for dynamic and complex single-page applications with frequent updates |
+
+
+**10.What is state, stateless, stateful and state managament terms?**
 - State refers to the current data of the component.
 - Stateful or state managment means, when a user perfroms some actions on the UI, then the react application should be able to update and re-render that data ot state on the ui.
 
-**10.Different between Transpiler and Compiler?**
+**11.Different between Transpiler and Compiler?**
 - A transpiler is a tool that converts source code from one high-level programming language(jsx) to angother high-level programming language(Javaascript)
 - A compiler is a tool that converts high-level programming language(java) into a lower-level language(machine code or bytecode)
 
-**11.What is prop drilling in react?**
-- Prop drilling is the process of passing down prop through multiple layers of components.
+
 
 
 # Npm vs Yarn different between
