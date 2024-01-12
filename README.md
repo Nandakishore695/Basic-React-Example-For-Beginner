@@ -62,7 +62,7 @@
 - A compiler is a tool that converts high-level programming language(java) into a lower-level language(machine code or bytecode)
 
 **11.What is prop drilling in react?**
-- Prop drilling is the process of passing down props through multiple layers of components.
+- Prop drilling is the process of passing down prop through multiple layers of components.
 
 
 # Npm vs Yarn different between
