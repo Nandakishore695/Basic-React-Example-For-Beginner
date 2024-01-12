@@ -50,7 +50,7 @@
 | React is a library| Angular is a framework |
 | React users a virtual Dom which makes it faster| Angular users a real dom |
 | React is smaller and lightweight library | Angular is bigger because it is a complete framework |
-| React depends on external libraries for many complex features, so developer has to write many lines of code for complex functionalities| Angular provide built-in support for features like routing, forms, validation, and HTTP requests |
+| React depends on external libraries for many complex features, so developer has to write many lines of code for complex functionalities| Angular provide built-in features like routing, forms, validation, and HTTP requests |
 | React is simple to learn and more popular than angular| Angular is slightly difficult to learn it has Typescript, OOPS concept and many more thing |
 
 **9.What is state, stateless, stateful and state managament terms?**
