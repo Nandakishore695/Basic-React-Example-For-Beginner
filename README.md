@@ -52,6 +52,19 @@
 | React is smaller and lightweight library | Angular is bigger because it is a complete framework |
 | React depends on external libraries for many complex features, so developer has to write many lines of code for complex functionalities| Since Angular is a complete framework, therefore it provide built-in support for features like routing, forms, validation, and HTTP requests |
 | React is simple to learn and more popular than angular| Angular is slightly difficult to learn as it has Typescript, OOPS concept and many more thing |
+
+**9.What is state, stateless, stateful and state managament terms?**
+- State refers to the current data of the component.
+- Stateful or state managment means, when a user perfroms some actions on the UI, then the react application should be able to update and re-render that data ot state on the ui.
+
+**10.Different between Transpiler and Compiler?**
+- A transpiler is a tool that converts source code from one high-level programming language(jsx) to angother high-level programming language(Javaascript)
+- A compiler is a tool that converts high-level programming language(java) into a lower-level language(machine code or bytecode)
+
+**What is props drilling in react?**
+- Prop drilling is the process of passing down props through multiple layers of components.
+
+
 # Npm vs Yarn different between
 
 **1.What is NPM?**
