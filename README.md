@@ -53,7 +53,7 @@
 | DOM  | Virtual DOM |
 | ------------- | ------------- |
 | Dom is actual respresentation of the webpage  | Virtual Dom is lightweight copy of the dom |
-| Re-renders the entire page when click occur  | Re-renders only the changes parts efficiently |
+| Entire page Re-renders when click occur  | Re-renders only the changes parts efficiently |
 | Can be slower, especially with frequent updates  | Optimized for faster rendering |
 | Suitable for static websites and simple applications | Ideal for dynamic and complex single-page applications with frequent updates |
 
