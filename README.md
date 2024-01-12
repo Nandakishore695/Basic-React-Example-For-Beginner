@@ -61,7 +61,7 @@
 - A transpiler is a tool that converts source code from one high-level programming language(jsx) to angother high-level programming language(Javaascript)
 - A compiler is a tool that converts high-level programming language(java) into a lower-level language(machine code or bytecode)
 
-**What is props drilling in react?**
+**What is prop drilling in react?**
 - Prop drilling is the process of passing down props through multiple layers of components.
 
 
