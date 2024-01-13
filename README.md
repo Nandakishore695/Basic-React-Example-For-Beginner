@@ -59,8 +59,9 @@
 
 
 **10.What is state, stateless, stateful and state managament terms?**
-- State refers to the current data of the component.
-- Stateful or state managment means, when a user perfroms some actions on the UI, then the react application should be able to update and re-render that data ot state on the ui.
+- In React, 'state' refers to the data that a component keeps track of and can change during its lifecycle. An important aspect is that whenever the state object changes, the component re-renders to reflect the updated state in the user interface.
+- In contrast, a 'stateless' component, also known as a functional component, doesn't manage its own state. On the other hand, a 'stateful' component, often a class component, manages its own state
+
 
 **11.Different between Transpiler and Compiler?**
 - A transpiler is a tool that converts source code from one high-level programming language(jsx) to angother high-level programming language(Javaascript)
