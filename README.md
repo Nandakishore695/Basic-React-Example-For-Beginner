@@ -141,7 +141,12 @@ class User extends React.Component {
   - useRef
   - useLayoutEffect
     
-
+**14.What is useState() and how its works?**
+- useState hook enables for function component to manage state
+- useState function accept the initial state value as a parameter and returns in an array with two elements. The first element is the current state value and second element is the function that is used to update the state.
+```
+const [state, setState] = useState(initialValue);
+```
 
 
 
