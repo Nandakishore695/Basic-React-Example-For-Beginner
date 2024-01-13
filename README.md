@@ -11,6 +11,29 @@
 
 **4.What is prop drilling in react?**
 - Prop drilling is the process of passing down prop through multiple layers of components.
+```
+function ParentComponent() { 
+    return <>
+      <div>
+        <ChildComponent message={"Data"}/>
+      </div>
+    </>
+}
+function ChildComponent({message}) { 
+    return <>
+      <div>
+        <GrandChildComponent message={message}/>
+      </div>
+    </>
+}
+function GrandChildComponent({message}) { 
+    return <>
+      <div>
+        <h1>{message}</h1>
+      </div>
+    </>
+}
+```
 
 **5.What is component?**
 -	A component is an independent, reusable bit of code which divides the UI into smaller pieces.
@@ -59,7 +82,39 @@
 **10.What is state in react?**
 - In React, 'state' refers to the data that a component keeps track of and can change during its lifecycle. An important aspect is that whenever the state object changes, the component re-renders to reflect the updated state in the user interface.
 - In contrast, a 'stateless' component, also known as a functional component, doesn't manage its own state. On the other hand, a 'stateful' component, often a class component, manages its own state
+```
+import React, { useState } from "react";
 
+function User() {
+  const [message, setMessage] = useState("Welcome to React world");
+
+  return (
+    <div>
+      <h1>{message}</h1>
+    </div>
+  );
+}
+```
+```
+import React from 'react';
+class User extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      message: "Welcome to React world",
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>{this.state.message}</h1>
+      </div>
+    );
+  }
+}
+```
 
 **11.Different between Transpiler and Compiler?**
 - A transpiler is a tool that converts source code from one high-level programming language(jsx) to angother high-level programming language(Javaascript)
