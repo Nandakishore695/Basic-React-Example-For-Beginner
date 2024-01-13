@@ -147,7 +147,9 @@ class User extends React.Component {
 ```
 const [state, setState] = useState(initialValue);
 ```
-
+**15.What is useEffect and how its works?**
+- useEffect hook is used to perform side effects in function component.
+- For example, data fetching from api or any other operation that needs to be performed after the component has been rendered.
 
 
 
