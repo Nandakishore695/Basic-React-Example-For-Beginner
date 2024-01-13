@@ -150,6 +150,17 @@ const [state, setState] = useState(initialValue);
 **15.What is useEffect and how its works?**
 - useEffect hook is used to perform side effects in function component.
 - For example, data fetching from api or any other operation that needs to be performed after the component has been rendered.
+- useEffect function will accept two parameter(effect function,dependency array)
+```
+import React, { useEffect } from 'react';
+function GrandChildComponent({message}) { 
+    return <>
+      <div>
+        <h1>{message}</h1>
+      </div>
+    </>
+}
+```
 
 
 
