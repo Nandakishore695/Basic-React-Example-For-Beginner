@@ -54,9 +54,7 @@
 | ------------- | ------------- |
 | Dom is actual respresentation of the webpage  | Virtual Dom is lightweight copy of the dom |
 | Entire page Re-renders when click occur  | Re-renders only the changes parts efficiently |
-| Can be slower, especially with frequent updates  | Optimized for faster rendering |
-| Suitable for static websites and simple applications | Ideal for dynamic and complex single-page applications with frequent updates |
-
+| Suitable for static websites and simple applications  | Optimized for faster rendering |
 
 **10.What is state in react?**
 - In React, 'state' refers to the data that a component keeps track of and can change during its lifecycle. An important aspect is that whenever the state object changes, the component re-renders to reflect the updated state in the user interface.
