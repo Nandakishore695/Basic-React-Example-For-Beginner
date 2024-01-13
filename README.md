@@ -118,7 +118,21 @@ class User extends React.Component {
   }
 }
 ```
+**12.What is react hooks and what are the top react hooks?**
+- React Hooks are introduced in version 16.
+- React hooks are inbuilt functions provided by react that allow functional components to manage state and lifecycle features.
+  
+  **Types of Hooks**
 
+  - useState
+  - useEffect
+  - useContext
+  - useReducer
+  - useCallback
+  - useMemo
+  - useRef
+  - useLayoutEffedct
+    
 **12.Different between Transpiler and Compiler?**
 - A transpiler is a tool that converts source code from one high-level programming language(jsx) to angother high-level programming language(Javaascript)
 - A compiler is a tool that converts high-level programming language(java) into a lower-level language(machine code or bytecode)
