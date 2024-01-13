@@ -35,7 +35,10 @@ function GrandChildComponent({message}) {
 }
 ```
 
-**5.What is component?**
+**5.What the way to avoid prop drilling?**
+- Prop drilling can make code harder to maintain to avoid prop drilling. we can use using context api and redux
+
+**6.What is component?**
 -	A component is an independent, reusable bit of code which divides the UI into smaller pieces.
 -	**There are two possible ways to create a component.**
   
@@ -54,13 +57,13 @@ function GrandChildComponent({message}) {
  }
 ```
 
-**6.What is arrow funcion expression in jsx?**
+**7.What is arrow funcion expression in jsx?**
 - An arrow function expression is a compact alternative to a traditional function expression
 
-**7.What is fragment in jsx?**
+**8.What is fragment in jsx?**
 - In react a frament is a way to group multiple children's elements. Using a fragment prevents the addition of unnecessary nodes to the dom.
 
-**8.Different between React and Angular?**
+**9.Different between React and Angular?**
 - React and Angular both are used to create single page ui application.
   
 | React  | Angular |
@@ -71,7 +74,7 @@ function GrandChildComponent({message}) {
 | React depends on external libraries for many complex features, so developer has to write many lines of code for complex functionalities| Angular provide built-in features like routing, forms, validation, and HTTP requests |
 | React is simple to learn and more popular than angular| Angular is slightly difficult to learn it has Typescript, OOPS concept and many more thing |
 
-**9.Different between Dom and Virtual Dom?**
+**10.Different between Dom and Virtual Dom?**
 
 | DOM  | Virtual DOM |
 | ------------- | ------------- |
@@ -79,7 +82,7 @@ function GrandChildComponent({message}) {
 | Entire page Re-renders when click occur  | Re-renders only the changes parts efficiently |
 | Suitable for static websites and simple applications  | Optimized for faster rendering |
 
-**10.What is state in react?**
+**11.What is state in react?**
 - In React, 'state' refers to the data that a component keeps track of and can change during its lifecycle. An important aspect is that whenever the state object changes, the component re-renders to reflect the updated state in the user interface.
 - In contrast, a 'stateless' component, also known as a functional component, doesn't manage its own state. On the other hand, a 'stateful' component, often a class component, manages its own state
 ```
@@ -116,7 +119,7 @@ class User extends React.Component {
 }
 ```
 
-**11.Different between Transpiler and Compiler?**
+**12.Different between Transpiler and Compiler?**
 - A transpiler is a tool that converts source code from one high-level programming language(jsx) to angother high-level programming language(Javaascript)
 - A compiler is a tool that converts high-level programming language(java) into a lower-level language(machine code or bytecode)
 
