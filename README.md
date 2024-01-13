@@ -83,7 +83,7 @@ function GrandChildComponent({message}) {
 | Suitable for static websites and simple applications  | Optimized for faster rendering |
 
 **11.What is state in react?**
-- In React, 'state' refers to the data that a component keeps track of and can change during its lifecycle. An important aspect is that whenever the state object changes, the component re-renders to reflect the updated state in the user interface.
+- In React, 'state' refers to the data that a component keeps track of and can change during its lifecycle. Whenever the state object changes, the component re-renders to reflect the updated state in the user interface.
 - In contrast, a 'stateless' component, also known as a functional component, doesn't manage its own state. On the other hand, a 'stateful' component, often a class component, manages its own state
 ```
 import React, { useState } from "react";
