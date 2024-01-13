@@ -86,7 +86,7 @@ function GrandChildComponent({message}) {
 
 | DOM  | Virtual DOM |
 | ------------- | ------------- |
-| Dom is actual respresentation of the webpage  | Virtual Dom is lightweight copy of the dom |
+| Dom is actual representation of the webpage  | Virtual Dom is lightweight copy of the dom |
 | Entire page Re-renders when click occur  | Re-renders only the changes parts efficiently |
 | Suitable for static websites and simple applications  | Optimized for faster rendering |
 
