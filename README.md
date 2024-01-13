@@ -6,7 +6,7 @@
 **2.What are the major features of React?**
 
 The major features of React are:
-- JxS that allows developers to write HTML in their Javascript code
+- Jxs that allows developers to write HTML code in React
 - It uses Virtual DOM instead of Real DOM manipulations
 - Reusable UI components
 - useful for Seo
