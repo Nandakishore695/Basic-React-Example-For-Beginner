@@ -170,6 +170,10 @@ function GrandChildComponent({message}) {
 **17.What is the useReducer() hook and how is it used?**
 - The useReducer() hook is used for managing complex state logic.It is an alternative to the useState() hook
 -  It accepts a reducer function and an initial state, and returns the current state and a dispatch function to update the state. The reducer function takes the current state and an action object as arguments and returns a new state.
+
+**18.what is hoc in react?**
+- In React, HOC stands for Higher-Order Component. A Higher-Order Component is a function that takes
+  
 # Npm vs Yarn different between
 
 **1.What is NPM?**
