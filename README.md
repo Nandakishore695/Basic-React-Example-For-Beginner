@@ -140,6 +140,8 @@ class User extends React.Component {
   - useMemo
   - useRef
   - useLayoutEffect
+  - useImperativeHandle
+  - useDebugValue
     
 **14.What is useState() and how its works?**
 - useState hook enables for function component to manage state
@@ -162,8 +164,12 @@ function GrandChildComponent({message}) {
 }
 ```
 
+**16.What is useContext hook and how it's works?**
+- useContext hook is a way to pass data through the component tree without having to pass props down manually at every level. The useContext() hook is used to consume a context that has been created by a parent component
 
-
+**17.What is the useReducer() hook and how is it used?**
+- The useReducer() hook is used for managing complex state logic.It is an alternative to the useState() hook
+-  It accepts a reducer function and an initial state, and returns the current state and a dispatch function to update the state. The reducer function takes the current state and an action object as arguments and returns a new state.
 # Npm vs Yarn different between
 
 **1.What is NPM?**
