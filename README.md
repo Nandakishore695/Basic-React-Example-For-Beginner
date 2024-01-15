@@ -166,7 +166,7 @@ function GrandChildComponent({message}) {
 ```
 
 **16.What is useContext hook and how it's works?**
-- In React useContext hook is a way to pass data between nested components without passing them as "props". no matter how deeply nested component
+- useContext hook is a way to pass data between nested components without passing them as "props". no matter how deeply nested component
 
 **17.What is the useReducer() hook and how is it used?**
 - The useReducer() hook is used for managing complex state logic.It is an alternative to the useState() hook
