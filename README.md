@@ -1,6 +1,6 @@
 # React Interview Questions and Answer❄️ 
 **1.What is React Js?**
-- React is an open-source front-end JavaScript library used for building single-page applications and reusable component. 
+- React is an open-source front-end JavaScript library used for building single-page applications. 
 - React was created by Jordan Walke, a software engineer working for Facebook. React was first deployed on Facebook's 
 
 **2.What are the major features of React?**
@@ -18,7 +18,7 @@ The major features of React are:
 - Props stand for "Properties" They provide a way to pass data from a parent component to its child components. Props are read-only, mean that the child components receiving props cannot modify them directly.
 
 **5.What is prop drilling in react?**
-- Prop drilling is the process of passing down prop through multiple layers of components.
+- Prop drilling is the process of passing prop down through multiple layers of components.
 ```
 function ParentComponent() { 
     return <>
@@ -44,7 +44,7 @@ function GrandChildComponent({message}) {
 ```
 
 **6.What the way to avoid prop drilling?**
-- Prop drilling can make code harder and to maintain to avoid prop drilling. we can use using context api or redux
+- Prop drilling can make code harder and to maintain to avoid prop drilling. We can use using context api or redux
 
 **7.What is component?**
 -	A component is an independent, reusable bit of code which divides the UI into smaller pieces.
@@ -66,10 +66,10 @@ function GrandChildComponent({message}) {
 ```
 
 **8.What is arrow funcion expression in jsx?**
-- An arrow function expression is a compact alternative to a traditional function expression
+- An arrow function expression is a compact alternative to a traditional function expression.
 
 **9.What is fragment in jsx?**
-- In react a frament is a way to group multiple children's elements. Using a fragment prevents the addition of unnecessary nodes to the dom.
+- In react a frament is a way to group multiple children's elements. Using a fragment to prevents the addition of unnecessary nodes in the dom like div tags.
 
 **10.Different between React and Angular?**
 - React and Angular both are used to create single page ui application.
