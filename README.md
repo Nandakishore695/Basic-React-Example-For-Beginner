@@ -43,7 +43,7 @@ function GrandChildComponent({message}) {
 }
 ```
 
-**6.What the way to avoid prop drilling?**
+**6.How to avoid prop drilling?**
 - Prop drilling can make code harder and to maintain to avoid prop drilling. We can use using context api or redux
 
 **7.What is component?**
