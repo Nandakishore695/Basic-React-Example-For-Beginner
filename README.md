@@ -178,7 +178,10 @@ function GrandChildComponent({message}) {
 -  It accepts a reducer function and an initial state, and returns the current state and a dispatch function to update the state. The reducer function takes the current state and an action object as arguments and returns a new state.
 
 **18.what is hoc in react?**
-- In React, HOC stands for Higher-Order Component. A Higher-Order Component is a function that takes
+- A higher-order component (HOC) is an advanced technique in React for reusing component logic that takes a component and returns a new component.
+
+**19.What is Redux in React?**
+- Redux is JavaScript library for managing and centralizing application the state. It is most commonly used with libraries such as React or Angular for building user interfaces.
   
 # Npm vs Yarn different between
 
