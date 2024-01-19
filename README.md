@@ -211,12 +211,12 @@ export default MyComponent;
 - A higher-order component is an advanced technique in React for reusing component logic it takes a component as a input and returns a new component.
 
 **23.What are life cycle method in react?**
-- **i.** class components have lifecycle methods that are invoked at different stages of a component:
+- **i. class components have lifecycle methods that are invoked at different stages of a component:**
   - componentDidMount() Invoked after the component is render to the DOM.
   - componentDidUpdate(): Invoked after the component is re-rendered.
   - componentWillUnmount(): Invoked immediately before a component is unmounted and destroyed.
 
-- **ii.** Functional Component with Hooks:
+- **ii. Functional Component with Hooks:**
   - useEffect(() => {}, [])
   - useEffect(() => {})
   - useEffect(() => { return () => {} }, [])
