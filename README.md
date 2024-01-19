@@ -178,7 +178,7 @@ function GrandChildComponent({message}) {
 -  It accepts a reducer function and an initial state, and returns the current state and a dispatch function to update the state. The reducer function takes the current state and an action object as arguments and returns a new state.
 
 **18.what is HOC in react?**
-- A higher-order component is an advanced technique in React for reusing component logic it take a component input and returns a new component.
+- A higher-order component is an advanced technique in React for reusing component logic it takes a component as a input and returns a new component.
 
 **19.What does mean super keyword in React?**
 - Super keyword is used to call the constructor of its parent class to access the parent's properties and methods in child class(inheritance concept).
