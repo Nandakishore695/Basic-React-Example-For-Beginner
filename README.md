@@ -207,8 +207,19 @@ export default MyComponent;
 - 
 **20.What is useMemo hook in react?**
 - 
-**.What is HOC in react?**
+**21.What is HOC in react?**
 - A higher-order component is an advanced technique in React for reusing component logic it takes a component as a input and returns a new component.
+
+**23.What are life cycle method in react?**
+- **i.** class components have lifecycle methods that are invoked at different stages of a component:
+  - componentDidMount() Invoked after the component is render to the DOM.
+  - componentDidUpdate(): Invoked after the component is re-rendered.
+  - componentWillUnmount(): Invoked immediately before a component is unmounted and destroyed.
+
+- **ii.** Functional Component with Hooks:
+  - useEffect(() => {}, [])
+  - useEffect(() => {})
+  - useEffect(() => { return () => {} }, [])
 
 **.What does mean super keyword in React?**
 - Super keyword is used to call the constructor of its parent class to access the parent's properties and methods in child class(inheritance concept).
