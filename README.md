@@ -152,6 +152,7 @@ class User extends React.Component {
 **14.What is useState() and how its works?**
 - useState hook enables for function component to manage state
 - useState function accept the initial state value as a parameter and returns in an array with two elements. The first element is the current state value and second element is the function that is used to update the state.
+- useState will re-render when the content change and update the ui.
 ```
 const [state, setState] = useState(initialValue);
 ```
@@ -177,7 +178,31 @@ function GrandChildComponent({message}) {
 - useReducer() hook is used for managing complex state logic.It is an alternative to the useState() hook
 -  It accepts a reducer function and an initial state, and returns the current state and a dispatch function to update the state. The reducer function takes the current state and an action object as arguments and returns a new state.
 
-**18.what is HOC in react?**
+**19.What is useRef in react hook?**
+- It's commonly used for direct manipulation of the DOM, like focusing on input elements.
+- useRef doesn't re-render when its content changes.
+```
+import React, { useRef, useEffect } from 'react';
+
+const MyComponent = () => {
+  // Creating a ref
+  const myRef = useRef();
+
+  useEffect(() => {
+    // Using the ref to manipulate the DOM directly
+    // For example, focusing on an input element
+    myRef.current.focus();
+  }, []);
+
+  return (
+    <div>
+      <input ref={myRef} type="text" />
+    </div>
+  );
+};
+export default MyComponent;
+```
+**18.What is HOC in react?**
 - A higher-order component is an advanced technique in React for reusing component logic it takes a component as a input and returns a new component.
 
 **19.What does mean super keyword in React?**
