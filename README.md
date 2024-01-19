@@ -204,7 +204,40 @@ export default MyComponent;
 ```
 
 **19.What is useCallback hook in react?**
-- 
+- useCallback is a hook that will return a memoized the callback function that only changes if one of the dependencies has changed.
+```
+import React, {useState, useCallback} from 'react';
+function App() {
+const [age, setAge] = useState(0);
+const [count, setCount] = useState(0);
+const incrementSalary = useCallback( () => {
+       
+    },[count])
+  return (
+    <div className="App">
+      <ParentComponent learning={incrementSalary} count={count} />
+      <h2> useCallBack hook</h2>
+      {age}
+      <button onClick = {()=>setAge(age + 1)>Click count </button>
+      {count}
+      <button onClick = {()=>setCount(count + 1)>Click count </button>
+    </div>
+  );
+}
+export default App;
+
+import React, {useState, useMemo} from 'react';
+function ParentComponent({learning,count}) {
+  console.log("Hello callback")
+  return (
+    <div className="App">
+    
+    </div>
+  );
+}
+export default memo(ParentComponent);
+
+```
 **20.What is useMemo hook in react?**
 - 
 **21.What is HOC in react?**
