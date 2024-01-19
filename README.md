@@ -178,7 +178,7 @@ function GrandChildComponent({message}) {
 - useReducer() hook is used for managing complex state logic.It is an alternative to the useState() hook
 -  It accepts a reducer function and an initial state, and returns the current state and a dispatch function to update the state. The reducer function takes the current state and an action object as arguments and returns a new state.
 
-**19.What is useRef in react hook?**
+**18.What is useRef in react hook?**
 - It's commonly used for direct manipulation of the DOM, like focusing on input elements.
 - useRef doesn't re-render when its content changes.
 ```
@@ -202,13 +202,18 @@ const MyComponent = () => {
 };
 export default MyComponent;
 ```
-**18.What is HOC in react?**
+
+**19.What is useCallback hook in react?**
+- 
+**20.What is useMemo hook in react?**
+- 
+**.What is HOC in react?**
 - A higher-order component is an advanced technique in React for reusing component logic it takes a component as a input and returns a new component.
 
-**19.What does mean super keyword in React?**
+**.What does mean super keyword in React?**
 - Super keyword is used to call the constructor of its parent class to access the parent's properties and methods in child class(inheritance concept).
 
-**20.What is Redux in React?**
+**.What is Redux in React?**
 - Redux is JavaScript library for managing and centralizing application the state. It is most commonly used with libraries such as React or Angular for building user interfaces.
 
 
