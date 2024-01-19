@@ -47,8 +47,8 @@ function GrandChildComponent({message}) {
 - Prop drilling can make code harder and to maintain to avoid prop drilling. We can use using context api or redux
 
 **7.What is component?**
--	A component is an independent, reusable bit of code which divides the UI into smaller pieces.
--	**There are two possible ways to create a component.**
+-	A component is an independent, reusable bit of code which divides the UI into smaller pieces.	
+-	**There are three possible ways to create a component.**
   
   i.**Function Components:** is the simplest way to create a component. Those are pure JavaScript functions that accept props as a parameter.
   ```
@@ -63,6 +63,11 @@ function GrandChildComponent({message}) {
     return <h1>Hello</h1>;
   }
  }
+```
+iii.**Arrow function** is introduce in ES6
+
+```
+const loginSave = (x, y) => x + y;
 ```
 
 **8.What is arrow funcion expression in jsx?**
