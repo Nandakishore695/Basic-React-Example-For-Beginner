@@ -20,7 +20,7 @@ The major features of React are:
 **5.What is prop drilling in react?**
 - Prop drilling is the process of passing prop down through multiple layers of components.
 ```
-function ParentComponent() { 
+function ParentComponent() {  
     return <>
       <div>
         <ChildComponent message={"Data"}/>
