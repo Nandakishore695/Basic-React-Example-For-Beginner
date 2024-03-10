@@ -23,6 +23,9 @@ The major features of React are:
   
 **4.What is the JSX in React?**
 - JSX stands for JavaScript XML. It allows us to write directly HTML and css code in React (within JavaScript xml).
+  Advantages:
+  - Component-Based
+  - Readability and Maintainability
 
 **5.What is props?**
 - Props stand for "Properties" They provide a way to pass data from a parent component to its child components. Props are read-only, mean that the child components receiving props cannot modify them directly.
