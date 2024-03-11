@@ -233,7 +233,7 @@ const MyComponent = () => {
 export default MyComponent;
 ```
 
-**20.What is useCallback hook in react?**
+**21.What is useCallback hook in react?**
 - useCallback is a hook that will return a memoized the callback function that only changes if one of the dependencies has changed.
 ```
 import React, {useState, useCallback} from 'react';
@@ -268,12 +268,12 @@ function ParentComponent({learning,count}) {
 export default memo(ParentComponent);
 
 ```
-**21.What is useMemo hook in react?**
+**22.What is useMemo hook in react?**
 - 
-**22.What is HOC in react?**
+**23.What is HOC in react?**
 - A higher-order component is an advanced technique in React for reusing component logic it takes a component as a input and returns a new component.
 
-**23.What are life cycle method in react?**
+**24.What are life cycle method in react?**
 - **i. class components have lifecycle methods that are invoked at different stages of a component:**
   - componentDidMount() Invoked after the component is render to the DOM.
   - componentDidUpdate(): Invoked after the component is re-rendered.
@@ -284,10 +284,10 @@ export default memo(ParentComponent);
   - useEffect(() => {})
   - useEffect(() => { return () => {} }, [])
 
-**24.What does mean super keyword in React?**
+**25.What does mean super keyword in React?**
 - Super keyword is used to call the constructor of its parent class to access the parent's properties and methods in child class(inheritance concept).
 
-**25.What is Redux in React?**
+**26.What is Redux in React?**
 - Redux is JavaScript library for managing and centralizing application the state. It is most commonly used with libraries such as React or Angular for building user interfaces.
 
 
