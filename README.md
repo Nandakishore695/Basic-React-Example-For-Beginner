@@ -79,7 +79,7 @@ function GrandChildComponent({message}) {
 ```
 
 **8.How to avoid prop drilling?**
-- Prop drilling can make code harder and to maintain to avoid prop drilling. We can use using context api or redux
+- Prop drilling can make code harder and to maintain to avoid prop drilling. We can use useContext hook or redux library
 
 **9.What is component?**
 -	A component is an independent, reusable bit of code which divides the UI into smaller pieces.	
