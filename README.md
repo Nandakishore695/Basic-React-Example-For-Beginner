@@ -8,6 +8,7 @@
 - Eslint Code Quality checker - VSCode
 - Path Intellisense - VSCode  
 - TSLint - VSCode
+  
 **1.Why we use react js?**
 -One of the main benefits of using React JS is its potential to reuse components. It saves time for developers as they don't have to write various codes for the same features.
 
