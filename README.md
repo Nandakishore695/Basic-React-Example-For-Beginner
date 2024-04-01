@@ -10,7 +10,7 @@
 - TSLint - VSCode
   
 **1.Why we use react js?**
--One of the main benefits of using React JS is its potential to reuse components. It saves time for developers as they don't have to write various codes for the same features.
+- One of the main benefits of using React JS is its potential to reuse components. It saves time for developers as they don't have to write various codes for the same features.
 
 **2.What is React.Js?** 
 - React is an open-source front-end JavaScript library used for building single-page applications. 
