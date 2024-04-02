@@ -292,9 +292,10 @@ export default memo(ParentComponent);
 **25.What does mean super keyword in React?**
 - Super keyword is used to call the constructor of its parent class to access the parent's properties and methods in child class(inheritance concept).
 
-**26.What is Redux in React?**
-- Redux is JavaScript library for managing and centralizing application the state. It is most commonly used with libraries such as React or Angular for building user interfaces.
+**Current Version of Redux - 5.0.1**
 
+**1.What is Redux in React?**
+- Redux is JavaScript library for managing and centralizing application the state. It is most commonly used with libraries such as React or Angular for building user interfaces.
 
 # Npm vs Yarn different between
 
