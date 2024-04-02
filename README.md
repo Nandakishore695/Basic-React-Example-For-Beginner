@@ -299,7 +299,8 @@ export default memo(ParentComponent);
 **25.What does mean super keyword in React?**
 - Super keyword is used to call the constructor of its parent class to access the parent's properties and methods in child class(inheritance concept).
 
-**26.difference between state and props?**
+**26.Difference between state and props?**
+- State refers to the internal data of a component that can change over time, while props are used to pass data between components.
 
 **27.What is React Fiber?**
 
