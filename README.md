@@ -274,7 +274,7 @@ export default memo(ParentComponent);
 
 ```
 **22.What is useMemo hook in react?**
-- 
+ 
 **23.What is HOC in react?**
 - A higher-order component is an advanced technique in React for reusing component logic it takes a component as a input and returns a new component.
 
