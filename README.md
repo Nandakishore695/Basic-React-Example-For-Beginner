@@ -299,6 +299,10 @@ export default memo(ParentComponent);
 **25.What does mean super keyword in React?**
 - Super keyword is used to call the constructor of its parent class to access the parent's properties and methods in child class(inheritance concept).
 
+**26.difference between state and props?**
+
+**27.What is React Fiber?**
+
 **Current Version of Redux - 5.0.1**
 
 **1.What is Redux in React?**
