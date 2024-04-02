@@ -193,7 +193,7 @@ class User extends React.Component {
     
 **16.What is useState() and how its works?**
 - useState hook enables for function component to manage state
-- useState function accept the initial state value as a parameter and returns in an array with two elements. The first element is the current state value and second element is the function that is used to update the state.
+- useState function accept the initial state value as a parameter and returns in an array with two elements. The first element is the current state value and second element is the callback function that is used to update the state.
 - useState will re-render when the content change and update the ui.
 ```
 const [state, setState] = useState(initialValue);
