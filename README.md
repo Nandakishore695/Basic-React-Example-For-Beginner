@@ -10,6 +10,10 @@
 - TSLint - VSCode
 
 **Current Version of React - 18.2.0**
+- Automatic Batching
+- Transitions
+- Suspense on the server
+- Concurrent react
 
 **Current Version of React-Router-Dom - 6.22.3**
 
