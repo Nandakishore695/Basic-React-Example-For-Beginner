@@ -169,7 +169,7 @@ class User extends React.Component {
   }
 }
 ```
-**15.What is react hooks and what are the top react hooks?**
+**15.What are react hooks?**
 - React Hooks are introduced in version 16.
 - React hooks are inbuilt functions that allows functional components to manage state and lifecycle events.
   
