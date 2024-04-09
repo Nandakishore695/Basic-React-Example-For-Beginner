@@ -173,9 +173,9 @@ class User extends React.Component {
   }
 }
 ```
-**15.What are react hooks?**
+**15. What are react hooks?**
 - React Hooks are introduced in version 16.
-- React hooks are inbuilt functions that allows functional components to manage state and lifecycle events.
+- React hooks are inbuilt functions that allow functional components to manage state and lifecycle events.
   
   **Types of Hooks**
 
@@ -191,15 +191,15 @@ class User extends React.Component {
   - useDebugValue
   - useId
     
-**16.What is useState() and how its works?**
-- useState hook function accept the initial state value as a parameter and returns in an array with two elements. The first element is the current state value and second element is the callback function that is used to update the state.
-- useState will re-render when the content change and update the ui.
+**16. What is useState()?**
+- useState hook function accepts the initial state value as a parameter and returns in an array with two elements. The first element is the current state value and the second element is the callback function that is used to update the state.
+- useState will re-render when the content changes and update the UI.
 ```
 const [state, setState] = useState(initialValue);
 ```
-**17.What is useEffect and how its works?**
+**17.What is useEffect?**
 - useEffect hook is used to perform side effects.
-- For example, data fetching from api or any other operation that needs to be performed after the component has been rendered.
+- For example, data fetching from API or any other operation that needs to be performed after the component has been rendered.
 - useEffect function will accept two parameter(effect function,dependency array)
 ```
 import React, { useEffect } from 'react';
@@ -212,14 +212,14 @@ function GrandChildComponent({message}) {
 }
 ```
 
-**18.What is useContext hook and how it's works?**
-- useContext hook is a way to pass data between nested components without passing them as "props". no matter how deeply nested component
+**18. What is useContext hook?**
+- useContext hook is a way to pass data between nested components without passing them as "props". no matter how deeply nested the component
 
-**19.What is the useReducer() hook and how is it used?**
-- useReducer() hook is used for managing complex state logic.It is an alternative to the useState() hook
--  It accepts a reducer function and an initial state, and returns the current state and a dispatch function to update the state. The reducer function takes the current state and an action object as arguments and returns a new state.
+**19. What is the useReducer hook and how is it used?**
+- useReducer hook is used for managing complex state logic. It is an alternative to the useState hook
+-  It accepts a reducer function and an initial state and returns the current state and a dispatch function to update the state. The reducer function takes the current state and an action object as arguments and returns a new state.
 
-**20.What is useRef in react hook?**
+**20. What is useRef in react hook?**
 - It's commonly used for direct manipulation of the DOM, like focusing on input elements.
 - useRef doesn't re-render when its content changes.
 ```
@@ -244,8 +244,8 @@ const MyComponent = () => {
 export default MyComponent;
 ```
 
-**21.What is useCallback hook in react?**
-- useCallback is a hook that will return a memoized the callback function that only changes if one of the dependencies has changed.
+**21. What is useCallback hook in react?**
+- useCallback is a hook that will return a memorized callback function that only changes if one of the dependencies has changed.
 ```
 import React, {useState, useCallback} from 'react';
 function App() {
@@ -279,12 +279,12 @@ function ParentComponent({learning,count}) {
 export default memo(ParentComponent);
 
 ```
-**22.What is useMemo hook in react?**
+**22. What is useMemo hook in react?**
  
-**23.What is HOC in react?**
-- A higher-order component is an advanced technique in React for reusing component logic it takes a component as a input and returns a new component.
+**23. What is HOC in react?**
+- A higher-order component is an advanced technique in React for reusing component logic it takes a component as an input and returns a new component.
 
-**24.What are life cycle method in react?**
+**24. What are life cycle methods in react?**
 - **i. class components have lifecycle methods that are invoked at different stages of a component:**
   - componentDidMount() Invoked after the component is render to the DOM.
   - componentDidUpdate(): Invoked after the component is re-rendered.
@@ -295,34 +295,34 @@ export default memo(ParentComponent);
   - useEffect(() => {})
   - useEffect(() => { return () => {} }, [])
 
-**25.What does mean super keyword in React?**
-- Super keyword is used to call the constructor of its parent class to access the parent's properties and methods in child class(inheritance concept).
+**25. What does mean super keyword in React?**
+- Super keyword is used to call the constructor of its parent class to access the parent's properties and methods in the child class(inheritance concept).
 
 **26.Difference between state and props?**
 - State refers to the internal data of a component that can change over time, while props are used to pass data between components.
 
-**27.What is React Fiber?**
+**27. What is React Fiber?**
 
 **Current Version of Redux - 5.0.1**
 
 **1.What is Redux in React?**
-- Redux is JavaScript library for managing and centralizing application the state. It is most commonly used with libraries such as React or Angular for building user interfaces.
+- Redux is a JavaScript library for managing and centralizing application state. It is most commonly used with libraries such as React or Angular for building user interfaces.
 
 # Npm vs Yarn different between
 
-**1.What is NPM?**
-- NPM known for Node Package Manager. NPM is the popular JavaScript package manager It is installed automatically whenever we install Node.js on our system. 
+**1. What is NPM?**
+- NPM is known for Node Package Manager. NPM is the popular JavaScript package manager It is installed automatically whenever we install Node.js on our system. 
 - It was created in 2009 by Isaac Schlueter. NPM uses a file called package.json to store the metadata of your project, such as name, version, dependencies, scripts, etc. It also creates a folder called node_modules where it stores the installed packages.
 - so, you must have an internet connection to install packages. So, the versions of packages installed on different machines may vary.
 
 **What is Yarn?**
-- Yarn is package manager developed by Facebook in 2016. It is another package manager for the JavaScript developer. Yarn provides speed, consistency, stability, and security as an alternative to NPM.
-- It also uses the same package.json file as NPM, but it adds another file called yarn.lock
+- Yarn is a package manager developed by Facebook in 2016. It is another package manager for the JavaScript developer. Yarn provides speed, consistency, stability, and security as an alternative to NPM.
+- It also uses the same package.json file as NPM, but it adds another file called yarn. lock
 - Yarn uses a lockfile to ensure that all packages are installed in the same versions across different machines, and it also uses checksums to verify the integrity of packages. It also has an offline mode, which allows you to install packages without an internet connection.
 
 **What is Pnpm?**
-- PNPM stands for Performant Node Package Manager. It is another alternative package manager it was created in 2016 by Zoltan Kochan. It was designed to be faster, lighter, and more secure than both NPM and YARN.
-- It also uses the same package.json file as NPM and YARN, but it adds another file called pnpm-lock.yaml
+- PNPM stands for Performant Node Package Manager. It is another alternative package manager that was created in 2016 by Zoltan Kochan. It was designed to be faster, lighter, and more secure than both NPM and YARN.
+- It also uses the same package.json file as NPM and YARN, but it adds another file called pnpm-lock. yaml
 
 
 
