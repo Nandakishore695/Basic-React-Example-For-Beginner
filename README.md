@@ -192,18 +192,21 @@ class User extends React.Component {
   - useId
     
 **16. What is useState()?**
-- useState hook function accepts the initial state value as a parameter and returns in an array with two elements. The first element is the current state value and the second element is the callback function that is used to update the state.
+- useState hook is a function that accepts the initial state value as a parameter and returns in an array with two elements. The first element is the current state value and the second element is used to update the state.
 - useState will re-render when the content changes and update the UI.
 ```
 const [state, setState] = useState(initialValue);
 ```
 **17.What is useEffect?**
 - useEffect hook is used to perform side effects.
-- For example, data fetching from API or any other operation that needs to be performed after the component has been rendered.
-- useEffect function will accept two parameter(effect function,dependency array)
+- For example, data fetching from API or Dom manipulation.
+- useEffect function will accept two parameters (effect function,dependency array)
 ```
 import React, { useEffect } from 'react';
-function GrandChildComponent({message}) { 
+function GrandChildComponent({message}) {
+    useEffect(() => {
+    };
+  }, []);
     return <>
       <div>
         <h1>{message}</h1>
@@ -213,7 +216,7 @@ function GrandChildComponent({message}) {
 ```
 
 **18. What is useContext hook?**
-- useContext hook is a way to pass data between nested components without passing them as "props". no matter how deeply nested the component
+- useContext hook provides a way to pass data between nested components without having to pass props down manually at every level.
 
 **19. What is the useReducer hook and how is it used?**
 - useReducer hook is used for managing complex state logic. It is an alternative to the useState hook
@@ -230,8 +233,6 @@ const MyComponent = () => {
   const myRef = useRef();
 
   useEffect(() => {
-    // Using the ref to manipulate the DOM directly
-    // For example, focusing on an input element
     myRef.current.focus();
   }, []);
 
