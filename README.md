@@ -18,14 +18,14 @@
 **Current Version of React-Router-Dom - 6.22.3**
 
 
-**1.Why we use react js?**
+**1.Why do we use react js?**
 - One of the main benefits of using React JS is its potential to reuse components. It saves time for developers as they don't have to write various codes for the same features.
 
-**2.What is React.Js?** 
+**2. What is React.Js?** 
 - React is an open-source front-end JavaScript library used for building single-page applications. 
 - React was created by Jordan Walke, a software engineer working for Facebook. React was first deployed on Facebook's 
 
-**3.What Type of Export modules?**
+**3. What Type of Export modules?**
 - There are two types
   - Name Export
   - Default Export
@@ -51,15 +51,15 @@ The major features of React are:
 - useful for Seo
   
 **5.What is the JSX in React?**
-- JSX stands for JavaScript XML. It allows us to write directly HTML and css code in React (within JavaScript xml).
+- JSX stands for JavaScript XML. It allows us to write directly HTML and CSS code in React (within JavaScript XML).
   Advantages:
   - Component-Based
   - Readability and Maintainability
 
-**6.What is props?**
-- Props stand for "Properties" They provide a way to pass data from a parent component to its child components. Props are read-only, mean that the child components receiving props cannot modify them directly.
+**6. What are props?**
+- Props stand for "Properties" They provide a way to pass data from a parent component to its child components. Props are read-only, meaning that the child components receiving props cannot modify them directly.
 
-**7.What is prop drilling in react?**
+**7. What is prop drilling in react?**
 - Prop drilling is the process of passing prop down through multiple layers of components.
 ```
 function ParentComponent() {  
@@ -86,10 +86,10 @@ function GrandChildComponent({message}) {
 ```
 
 **8.How to avoid prop drilling?**
-- Prop drilling can make code harder and to maintain to avoid prop drilling. We can use useContext hook or redux library
+- Prop drilling can make code harder to maintain to avoid prop drilling. We can use useContext hook or redux library
 
-**9.What is component?**
--	A component is an independent, reusable bit of code which divides the UI into smaller pieces.	
+**9.What is a component?**
+-	A component is an independent, reusable bit of code that divides the UI into smaller pieces.	
 -	**There are three possible ways to create a component.**
   
   i.**Function Components:** is the simplest way to create a component. Those are pure JavaScript functions that accept props as a parameter.
@@ -112,22 +112,22 @@ iii.**Arrow function** is introduce in ES6
 const loginSave = (x, y) => x + y;
 ```
 
-**10.What is arrow funcion expression in jsx?**
+**10. What is the arrow function expression in JSX?**
 - An arrow function expression is a compact alternative to a traditional function expression.
 
-**11.What is fragment in jsx?**
-- In react a frament is a way to group multiple children's elements. Using a fragment to prevents the addition of unnecessary nodes in the dom like div tags.
+**11. What is a fragment in JSX?**
+- In react a fragment is a way to group multiple children's elements. Using a fragment to prevents the addition of unnecessary nodes in the dom like div tags.
 
 **12.Different between React and Angular?**
-- React and Angular both are used to create single page ui application.
+- React and Angular both are used to create single-page UI applications.
   
 | React  | Angular |
 | ------------- | ------------- |
 | React is a library| Angular is a framework |
 | React users a virtual Dom which makes it faster| Angular users a real dom |
-| React is smaller and lightweight library | Angular is bigger because it is a complete framework |
-| React depends on external libraries for many complex features, so developer has to write many lines of code for complex functionalities| Angular provide built-in features like routing, forms, validation, and HTTP requests |
-| React is simple to learn and more popular than angular| Angular is slightly difficult to learn it has Typescript, OOPS concept and many more thing |
+| React is a smaller and lightweight library | Angular is bigger because it is a complete framework |
+| React depends on external libraries for many complex features, so the developer has to write many lines of code for complex functionalities| Angular provides built-in features like routing, forms, validation, and HTTP requests |
+| React is simple to learn and more popular than angular| Angular is slightly difficult to learn it has Typescript, OOPS concept, and many more things |
 
 **13.Different between Dom and Virtual Dom?**
 
@@ -137,9 +137,9 @@ const loginSave = (x, y) => x + y;
 | Entire page Re-renders when click occur  | Re-renders only the changes parts efficiently |
 | Suitable for static websites and simple applications  | Optimized for faster rendering |
 
-**14.What is state in react?**
+**14. What is a state in react?**
 - In React, 'state' refers to the data that a component keeps track of and can change during its lifecycle. Whenever the state object changes, the component re-renders to reflect the updated state in the user interface.
-- In contrast, a 'stateless' component, also known as a functional component, doesn't manage its own state. On the other hand, a 'stateful' component, often a class component, manages its own state
+- In contrast, a 'stateless' component, also known as a functional component, doesn't manage its state. On the other hand, a 'stateful' component, often a class component, manages its state
 ```
 import React, { useState } from "react";
 
