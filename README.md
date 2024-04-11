@@ -17,13 +17,12 @@
 
 **Current Version of React-Router-Dom - 6.22.3**
 
-
-**Why do we use React JS?**
-- One of the main benefits of using React JS is its potential to reuse components. It saves time for developers as they don't have to write various codes for the same features.
-
 **What is React Js?** 
 - React is an open-source front-end JavaScript library used for building single-page applications. 
-- React was created by Jordan Walke, a software engineer working for Facebook. React was first deployed on Facebook's 
+- React was created by Jordan Walke, a software engineer working for Facebook. React was first deployed on Facebook's
+
+**Why do we use React JS?**
+- One of the main benefits of using React JS is its potential to reuse components. It saves time for developers as they don't have to write various codes for the same features. 
 
 **What Type of Export modules?**
 - There are two types
@@ -46,9 +45,11 @@ console.log(dx, b, c)
 
 The major features of React are:
 - Jxs that allows developers to write HTML code in React
-- It uses Virtual DOM instead of Real DOM manipulations
+- It uses Virtual DOM instead of Real DOM
 - Reusable UI components
-- useful for Seo
+- Unidirectional Data Flow
+- Server-Side Rendering
+- React Hooks
   
 **What is the JSX in React?**
 - JSX stands for JavaScript XML. It allows us to write directly HTML and CSS code in React (within JavaScript XML).
@@ -137,9 +138,15 @@ const loginSave = (x, y) => x + y;
 | Entire page Re-renders when click occur  | Re-renders only the changes parts efficiently |
 | Suitable for static websites and simple applications  | Optimized for faster rendering |
 
+**Difference between state and props?**
+- State refers to the internal data of a component that can change over time, while props are used to pass data between components.
+
+**What is Reconciliation?**
+- The algorithm react is used to diff one tree with another to determine which parts need to be changed.
+
 **What is a state in react?**
-- In React, 'state' refers to the data that a component keeps track of and can change during its lifecycle. Whenever the state object changes, the component re-renders to reflect the updated state in the user interface.
-- In contrast, a 'stateless' component, also known as a functional component, doesn't manage its state. On the other hand, a 'stateful' component, often a class component, manages its state
+- State refers to the internal data of a component that can change over time.
+
 ```
 import React, { useState } from "react";
 
@@ -173,8 +180,12 @@ class User extends React.Component {
   }
 }
 ```
+**What is Stateful and Stateless component in react?**
+- A 'stateful' component, known as a class component, manages its state.
+- A 'stateless' component, known as a functional component, doesn't manage its state.
+
 **What are react hooks?**
-- React Hooks are introduced in version 16.
+- React Hooks are introduced in the 16-version.
 - React hooks are inbuilt functions that allow functional components to manage state and lifecycle events.
   
   **Types of Hooks**
@@ -191,16 +202,16 @@ class User extends React.Component {
   - useDebugValue
   - useId
     
-**What is useState()?**
+**What is useState hook?**
 - useState hook is a function that accepts the initial state value as a parameter and returns in an array with two elements. The first element is the current state value and the second element is used to update the state.
 - useState will re-render when the content changes and update the UI.
 ```
 const [state, setState] = useState(initialValue);
 ```
-**What is useEffect?**
+**What is useEffect hook?**
 - useEffect hook is used to perform side effects.
 - For example, data fetching from API or Dom manipulation.
-- useEffect function will accept two parameters (effect function,dependency array)
+- useEffect function will accept two parameters (effect function, dependency array)
 ```
 import React, { useEffect } from 'react';
 function GrandChildComponent({message}) {
@@ -280,7 +291,7 @@ function ParentComponent({learning,count}) {
 export default memo(ParentComponent);
 
 ```
-**What is the useMemo hook in react?**
+**What is the useMemo hook?**
  
 **What is HOC in react?**
 - A higher-order component is an advanced technique in React for reusing component logic it takes a component as an input and returns a new component.
@@ -299,14 +310,12 @@ export default memo(ParentComponent);
 **What does mean super keyword in React?**
 - The super keyword is used to call the constructor of its parent class to access the parent's properties and methods in the child class(inheritance concept).
 
-**Difference between state and props?**
-- State refers to the internal data of a component that can change over time, while props are used to pass data between components.
 
 **What is React Fiber?**
 
 **Current Version of Redux - 5.0.1**
 
-**What is Redux in React?**
+**What is Redux?**
 - Redux is a JavaScript library for managing and centralizing application state. It is most commonly used with libraries such as React or Angular for building user interfaces.
 
 # Npm vs Yarn different between
