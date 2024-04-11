@@ -18,14 +18,14 @@
 **Current Version of React-Router-Dom - 6.22.3**
 
 
-**1.Why do we use react js?**
+**Why do we use React JS?**
 - One of the main benefits of using React JS is its potential to reuse components. It saves time for developers as they don't have to write various codes for the same features.
 
-**2. What is React.Js?** 
+**What is React Js?** 
 - React is an open-source front-end JavaScript library used for building single-page applications. 
 - React was created by Jordan Walke, a software engineer working for Facebook. React was first deployed on Facebook's 
 
-**3. What Type of Export modules?**
+**What Type of Export modules?**
 - There are two types
   - Name Export
   - Default Export
@@ -42,7 +42,7 @@ export {b,c} // Named Export
 import dx, {b, c} from './modules/module1'
 console.log(dx, b, c)
 ```
-**4.What are the major features of React?**
+**What are the major features of React?**
 
 The major features of React are:
 - Jxs that allows developers to write HTML code in React
@@ -50,16 +50,16 @@ The major features of React are:
 - Reusable UI components
 - useful for Seo
   
-**5.What is the JSX in React?**
+**What is the JSX in React?**
 - JSX stands for JavaScript XML. It allows us to write directly HTML and CSS code in React (within JavaScript XML).
   Advantages:
   - Component-Based
   - Readability and Maintainability
 
-**6. What are props?**
+**What are props?**
 - Props stand for "Properties" They provide a way to pass data from a parent component to its child components. Props are read-only, meaning that the child components receiving props cannot modify them directly.
 
-**7. What is prop drilling in react?**
+**What is prop drilling in react?**
 - Prop drilling is the process of passing prop down through multiple layers of components.
 ```
 function ParentComponent() {  
@@ -85,10 +85,10 @@ function GrandChildComponent({message}) {
 }
 ```
 
-**8.How to avoid prop drilling?**
+**How to avoid prop drilling?**
 - Prop drilling can make code harder to maintain to avoid prop drilling. We can use useContext hook or redux library
 
-**9.What is a component?**
+**What is a component?**
 -	A component is an independent, reusable bit of code that divides the UI into smaller pieces.	
 -	**There are three possible ways to create a component.**
   
@@ -112,13 +112,13 @@ iii.**Arrow function** is introduce in ES6
 const loginSave = (x, y) => x + y;
 ```
 
-**10. What is the arrow function expression in JSX?**
+**What is the arrow function expression in JSX?**
 - An arrow function expression is a compact alternative to a traditional function expression.
 
-**11. What is a fragment in JSX?**
+**What is a fragment in JSX?**
 - In react a fragment is a way to group multiple children's elements. Using a fragment to prevents the addition of unnecessary nodes in the dom like div tags.
 
-**12.Different between React and Angular?**
+**Different between React and Angular?**
 - React and Angular both are used to create single-page UI applications.
   
 | React  | Angular |
@@ -129,7 +129,7 @@ const loginSave = (x, y) => x + y;
 | React depends on external libraries for many complex features, so the developer has to write many lines of code for complex functionalities| Angular provides built-in features like routing, forms, validation, and HTTP requests |
 | React is simple to learn and more popular than angular| Angular is slightly difficult to learn it has Typescript, OOPS concept, and many more things |
 
-**13.Different between Dom and Virtual Dom?**
+**Different between Dom and Virtual Dom?**
 
 | DOM  | Virtual DOM |
 | ------------- | ------------- |
@@ -137,7 +137,7 @@ const loginSave = (x, y) => x + y;
 | Entire page Re-renders when click occur  | Re-renders only the changes parts efficiently |
 | Suitable for static websites and simple applications  | Optimized for faster rendering |
 
-**14. What is a state in react?**
+**What is a state in react?**
 - In React, 'state' refers to the data that a component keeps track of and can change during its lifecycle. Whenever the state object changes, the component re-renders to reflect the updated state in the user interface.
 - In contrast, a 'stateless' component, also known as a functional component, doesn't manage its state. On the other hand, a 'stateful' component, often a class component, manages its state
 ```
@@ -173,7 +173,7 @@ class User extends React.Component {
   }
 }
 ```
-**15. What are react hooks?**
+**What are react hooks?**
 - React Hooks are introduced in version 16.
 - React hooks are inbuilt functions that allow functional components to manage state and lifecycle events.
   
@@ -191,13 +191,13 @@ class User extends React.Component {
   - useDebugValue
   - useId
     
-**16. What is useState()?**
+**What is useState()?**
 - useState hook is a function that accepts the initial state value as a parameter and returns in an array with two elements. The first element is the current state value and the second element is used to update the state.
 - useState will re-render when the content changes and update the UI.
 ```
 const [state, setState] = useState(initialValue);
 ```
-**17.What is useEffect?**
+**What is useEffect?**
 - useEffect hook is used to perform side effects.
 - For example, data fetching from API or Dom manipulation.
 - useEffect function will accept two parameters (effect function,dependency array)
@@ -215,14 +215,14 @@ function GrandChildComponent({message}) {
 }
 ```
 
-**18. What is useContext hook?**
+**What is useContext hook?**
 - useContext hook provides a way to pass data between nested components without having to pass props down manually at every level.
 
-**19. What is the useReducer hook and how is it used?**
+**What is the useReducer hook and how is it used?**
 - useReducer hook is used for managing complex state logic. It is an alternative to the useState hook
 -  It accepts a reducer function and an initial state and returns the current state and a dispatch function to update the state. The reducer function takes the current state and an action object as arguments and returns a new state.
 
-**20. What is useRef in react hook?**
+**What is useRef in react hook?**
 - It's commonly used for direct manipulation of the DOM, like focusing on input elements.
 - useRef doesn't re-render when its content changes.
 ```
@@ -245,7 +245,7 @@ const MyComponent = () => {
 export default MyComponent;
 ```
 
-**21. What is useCallback hook in react?**
+**What is useCallback hook in react?**
 - useCallback is a hook that will return a memorized callback function that only changes if one of the dependencies has changed.
 ```
 import React, {useState, useCallback} from 'react';
@@ -280,12 +280,12 @@ function ParentComponent({learning,count}) {
 export default memo(ParentComponent);
 
 ```
-**22. What is useMemo hook in react?**
+**What is the useMemo hook in react?**
  
-**23. What is HOC in react?**
+**What is HOC in react?**
 - A higher-order component is an advanced technique in React for reusing component logic it takes a component as an input and returns a new component.
 
-**24. What are life cycle methods in react?**
+**What are the life cycle methods in react?**
 - **i. class components have lifecycle methods that are invoked at different stages of a component:**
   - componentDidMount() Invoked after the component is render to the DOM.
   - componentDidUpdate(): Invoked after the component is re-rendered.
@@ -296,22 +296,22 @@ export default memo(ParentComponent);
   - useEffect(() => {})
   - useEffect(() => { return () => {} }, [])
 
-**25. What does mean super keyword in React?**
-- Super keyword is used to call the constructor of its parent class to access the parent's properties and methods in the child class(inheritance concept).
+**What does mean super keyword in React?**
+- The super keyword is used to call the constructor of its parent class to access the parent's properties and methods in the child class(inheritance concept).
 
-**26.Difference between state and props?**
+**Difference between state and props?**
 - State refers to the internal data of a component that can change over time, while props are used to pass data between components.
 
-**27. What is React Fiber?**
+**What is React Fiber?**
 
 **Current Version of Redux - 5.0.1**
 
-**1.What is Redux in React?**
+**What is Redux in React?**
 - Redux is a JavaScript library for managing and centralizing application state. It is most commonly used with libraries such as React or Angular for building user interfaces.
 
 # Npm vs Yarn different between
 
-**1. What is NPM?**
+**What is NPM?**
 - NPM is known for Node Package Manager. NPM is the popular JavaScript package manager It is installed automatically whenever we install Node.js on our system. 
 - It was created in 2009 by Isaac Schlueter. NPM uses a file called package.json to store the metadata of your project, such as name, version, dependencies, scripts, etc. It also creates a folder called node_modules where it stores the installed packages.
 - so, you must have an internet connection to install packages. So, the versions of packages installed on different machines may vary.
